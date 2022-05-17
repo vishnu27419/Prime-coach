@@ -1,0 +1,129 @@
+section.myteams_wrapper {
+  padding: 0 0 70px;
+}
+
+.breadcrumb {
+  background: transparent;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #2f84ca;
+}
+
+.breadcrumb li.breadcrumb-item.active {
+  color: #fff;
+}
+
+.inner_teamsection {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #fff;
+  padding: 20px 30px;
+}
+
+.inner_teamsection .heading {
+  font-size: 34px;
+  text-transform: capitalize;
+}
+
+.inner_teamsection a.delete_program {
+  border: 1px red solid;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 8px 25px;
+  font-size: 18px;
+  color: red;
+  text-decoration: none;
+}
+
+.inner_teamsection a {
+  text-decoration: none;
+}
+
+.team_name {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+/* 
+.myteams_wrapper figure {
+  max-width: 200px;
+  margin: 0 auto;
+} */
+
+.form-inline .input-group {
+  width: 100%;
+}
+
+.asign_title {
+  font-size: 30px;
+  margin: 30px 0 30px;
+}
+
+.asign_team_right ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.asign_team_right ul li a {
+  border-color: rgba(129, 207, 224, 1);
+  color: rgba(129, 207, 224, 1);
+}
+
+.asign_team_right ul li:nth-child(2) a {
+  border-color: rgba(200, 247, 197, 1);
+  color: rgba(200, 247, 197, 1);
+}
+
+.asign_team_right ul li:nth-child(3) a {
+  border-color: rgba(242, 38, 19, 1);
+  color: rgba(242, 38, 19, 1);
+}
+
+.asign_team_right ul li:nth-child(4) a {
+  border-color: rgba(255, 255, 126, 1);
+  color: rgba(255, 255, 126, 1);
+}
+
+.asign_team_right ul li:first-child {
+  margin-left: 0;
+}
+
+.asign_team_right ul li a {
+  color: #fff;
+  border: 2px #317fbf solid;
+  display: inline-block;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.asign_team_right table tbody tr td a {
+  color: #fff;
+  border: 2px #d43f3a solid;
+  text-align: center;
+  display: block;
+  padding: 8px 20px;
+  text-transform: capitalize;
+  border-radius: 8px;
+  background: #d43f3a;
+}
+
+.asign_team_right table tbody tr td a.assign_btn {
+  color: #fff;
+  border: 2px #2e6da4 solid;
+  display: block;
+  padding: 8px 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 8px;
+  background: transparent;
+}
+
+.btn-primary {
+  border: 1px #317fbf solid;
+  background: transparent;
+  color: #fff;
+}

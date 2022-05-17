@@ -1,0 +1,118 @@
+.heading h1 {
+  font-size: 54px;
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+}
+
+.heading h1 span {
+  color: #fff;
+}
+
+.blue_heading {
+  color: #2f84ca;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 25px;
+}
+
+.policy_content {
+  padding: 0 0 30px;
+}
+
+.policy_content p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.policy_content ul li {
+  font-size: 18px;
+  padding-bottom: 25px;
+}
+
+.policy_content ul li:last-child {
+  padding-bottom: 0;
+}
+
+.your_policy p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.your_policy ul li {
+  font-size: 18px;
+  line-height: 32px;
+  padding-bottom: 25px;
+}
+
+.your_policy ul li:last-child {
+  padding-bottom: 0;
+}
+
+.your_policy ul li strong {
+  display: block;
+}
+
+.effectivedate {
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+
+.policy_content h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+
+.effectivedate span {
+  color: #2f84ca;
+}
+
+.card {
+  margin-bottom: 20px;
+  border: 0;
+}
+
+.card-header {
+  padding: 0;
+  border: 0;
+  position: relative;
+}
+
+.card-header::before {
+  content: 'Q.';
+  display: inline-block;
+  position: absolute;
+  font-size: 24px;
+  font-weight: 600;
+  background: #2f84ca;
+  color: #fff;
+  top: 0;
+  bottom: 0;
+  left: -30px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: auto 0;
+}
+
+.card-header button.btn.btn-link {
+  width: 100%;
+  text-align: left;
+  padding: 40px 0 40px 40px;
+  color: #000;
+  font-size: 22px;
+  border-radius: 5px;
+  white-space: inherit;
+}
+
+.card-header button.btn.btn-link:hover {
+  text-decoration: none;
+}
+
+.card-header button.btn.btn-link:focus {
+  text-decoration: none;
+  border: 2px #000 solid;
+}

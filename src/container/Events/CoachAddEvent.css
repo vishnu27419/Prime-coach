@@ -1,0 +1,59 @@
+.add-event {
+  justify-content: center;
+  /* margin-left: 5%; */
+  flex-wrap: wrap;
+}
+
+.add-event-form {
+  background: rgba(255, 255, 255, 0.06);
+  /* margin: 25px 0 0; */
+  color: #fff;
+  padding: 10px 20px 50px;
+  /* margin-bottom: 10%; */
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #8f8f8f;
+}
+
+.add-event-fields {
+  margin-top: 10px;
+}
+
+/****************************/
+
+.custom-event {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 20px 15px 20px;
+  border-radius: 10px;
+  border: 1px solid #8f8f8f;
+  margin-bottom: 15px;
+}
+
+.custom-event h5 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #2ea6fe;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 311px;
+}
+
+.custom-event h6 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 311px;
+}
+
+.custom-event button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-outlined:hover {
+  background-color: green;
+}

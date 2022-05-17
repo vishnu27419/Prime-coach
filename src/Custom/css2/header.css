@@ -1,0 +1,45 @@
+.navbar-toggler span{
+    font-size: 26px;
+    color: #ffffff;
+}
+
+#header .navbar{
+    background-color: #000;
+}
+
+#header .navbar .nav-link{
+    color: #ffffff;
+    padding: 0 20px;
+    margin: 0;
+    font-size: 18px;
+    border-right: 2px #2f84ca solid;
+}
+
+#header .navbar .nav-item:last-child .nav-link{
+    border-right: 0;
+}
+
+#header .logo img{
+    max-width: 70px;
+}
+
+.web-logo div{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.web-logo div span{
+    color: #2f84ca;
+}
+
+/* .dropdown:hover>.dropdown-menu {
+    display: block;
+} */
+  
+.dropdown>.dropdown-toggle:active {
+/*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}

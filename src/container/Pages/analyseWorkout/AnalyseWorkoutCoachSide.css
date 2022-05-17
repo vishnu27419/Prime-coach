@@ -1,0 +1,63 @@
+.card-analye-workout {
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  transition: 0.3s;
+  width: 100%;
+  background-color: #353535;
+  border: 1px dashed #2f84ca;
+  border-radius: 10px;
+}
+
+.card-analye-workout:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container-analye-workout {
+  padding: 10px 16px;
+  /* height: 250px; */
+}
+
+.vl-analye-workout {
+  border-left: 3px solid #2f84ca;
+  /* height: 500px; */
+}
+
+.vl-analye-workout p {
+  margin-bottom: 2px;
+  margin-left: 12px;
+  font-size: 15px;
+}
+
+.analyse-workout-num-block {
+  margin-bottom: 5px;
+  margin-left: 5px;
+  background-color: #404040;
+  /* padding: 3px 15px; */
+  border-radius: 50%;
+  border: 1px solid #2f84ca;
+  color: #2f84ca;
+  font-size: 14px;
+  font-weight: bold;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.analyse-workout-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.analyse-workout-reps-block {
+  margin-bottom: 5px;
+  margin-left: 5px;
+  background-color: #404040;
+  padding: 3px 15px;
+  border-radius: 3px;
+  border: 1px solid #2f84ca;
+  color: #2f84ca;
+  font-size: 14px;
+  font-weight: bold;
+}

@@ -1,0 +1,2670 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+:root {
+  --defaultWhite: #fff;
+  --defaultBlack: #000;
+  --defaultGray: #c4c4c4;
+  --appBlue: #317fbf;
+  --appBlue2: #2f84ca;
+  --appBackground: #383e56;
+  --appRed: #d9534f;
+  --appGray: rgba(255, 255, 255, 0.06);
+  --appYellow: rgb(240, 173, 78);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins";
+}
+
+.navbar-toggler span {
+  font-size: 26px;
+  color: #ffffff;
+}
+
+#header .navbar {
+  background-color: #000;
+  min-height: 150px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+#header .navbar .nav-link {
+  color: #ffffff;
+  padding: 0 20px;
+  margin: 0;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+#header .navbar .nav-item:hover .nav-link {
+  color: #2f84ca;
+}
+
+#header .navbar .nav-link::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 2px;
+  height: 20px;
+  background-color: #2f84ca;
+}
+
+#header .navbar .nav-item:last-child .nav-link::before {
+  display: none;
+}
+
+#header .logo img {
+  max-width: 70px;
+}
+
+.web-logo div {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.web-logo div span {
+  color: #2f84ca;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+
+/* .signup-wrapper,
+.login_page,
+.selection-wrapper {
+  height: 100vh;
+  background: #000;
+  background: -webkit-linear-gradient(to right, #434343, #000);
+  background: linear-gradient(to right, #434343, #000);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+.signup-wrapper,
+.login_page,
+.selection-wrapper {
+  /* height: 100vh; */
+  background: #000;
+  background: -webkit-linear-gradient(to right, #434343, #000);
+  background: linear-gradient(to right, #434343, #000);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-wrapper {
+  padding: 80px 0 0;
+  background: #000;
+  background: -webkit-linear-gradient(to right, #434343, #000);
+  background: linear-gradient(to right, #434343, #000);
+}
+
+.prime_signup_form,
+.login_form {
+  padding: 40px;
+}
+
+.prime_signup_form .heading,
+.login_form .heading {
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.prime_signup_form label,
+.login_form label {
+  color: #ffffff;
+}
+
+.prime_signup_form .form-control,
+.login_form .form-control {
+  height: 47px;
+  border-radius: 0;
+  border: 0;
+}
+
+a.forgot_password {
+  color: #2f84ca;
+  display: block;
+  margin: 20px 0 0;
+}
+
+.login_form .form-group {
+  margin-bottom: 30px;
+}
+
+.submit_btn {
+  background-color: transparent;
+  border-color: #2f84ca;
+}
+
+.submit_btn:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.custom-control.custom-checkbox {
+  width: 100% !important;
+  padding-left: 25px !important;
+}
+
+.custom-checkbox .custom-control-label::before {
+  width: 1rem;
+  height: 1rem;
+}
+
+/*--------banner_wrapper Css START-------------*/
+.banner_wrapper {
+  width: 100%;
+  margin: 150px 0 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: normal;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(184, 184, 184, 0.5) 55.8585vw,
+      rgba(184, 184, 184, 0.8) 60.6796vw,
+      rgba(184, 184, 184, 0.9) 66.7467vw,
+      rgba(0, 0, 0, 0.72) 71.7568vw,
+      rgba(0, 0, 0, 0.72) 100%
+    ),
+    url(../images/banner_images.jpg);
+  color: #fff;
+  position: relative;
+}
+
+/* .banner_content {
+    padding: 100px 0;
+} */
+
+.banner_image {
+  padding: 80px 0;
+}
+
+.banner_content p {
+  font-size: 24px;
+  color: #000;
+}
+
+.banner_content h1 {
+  font-size: 84px;
+  line-height: 100px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.banner_content span {
+  color: #ffffff;
+}
+
+a.start_btn {
+  max-width: 240px;
+  border: 3px #2f84ca solid;
+  display: block;
+  text-align: center;
+  border-radius: 60px;
+  text-transform: capitalize;
+  height: 55px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 50px;
+  margin: 150px 0 0;
+}
+
+a.start_btn img {
+  max-width: 30px;
+  margin-left: 35px;
+}
+
+a.start_btn:hover,
+a.learn_more:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  /* color: #fff; */
+}
+
+#gaming_wrapper .game_play img:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+}
+
+/*----------How-it-Work Css START-----------*/
+
+.how-it-work-wrapper {
+  padding: 60px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+.heading_text span {
+  color: #2f84ca;
+}
+
+.details {
+  margin: 0 20px;
+}
+
+.detail-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #2f84ca;
+  padding: 0 0 40px;
+  border-bottom: 3px #fff solid;
+}
+
+.details p {
+  margin: 25px 0 0;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/*------------coach-athelete_wrapper Css START---------------*/
+#coach-athelete_wrapper {
+  color: #ffffff;
+}
+
+.athelete-section {
+  background-image: url("../images/for-athltes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 170px;
+  text-align: justify;
+}
+
+.coach-section {
+  background-image: url("../images/for-coaches.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 170px;
+  text-align: justify;
+}
+
+.athelete-section h2,
+.coach-section h2 {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 50px 0 100px;
+  margin: 0;
+}
+
+.athelete-section a,
+.coach-section a {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 60px;
+  text-decoration: none;
+  width: 200px;
+  height: 55px;
+  align-items: center;
+  margin: 20px auto 0;
+}
+
+#coach-athelete_wrapper p {
+  font-size: 17px;
+  line-height: 26px;
+  margin: 0;
+}
+
+/*------------software_wrapper Css START---------------*/
+
+#software_wrapper {
+  background: linear-gradient(to bottom, #eaeaea 76.076%, #ddd 76.076%);
+  padding: 130px 0 60px;
+}
+
+.right_side_text {
+  font-size: 27px;
+  font-weight: 500;
+}
+
+/*------------gaming_wrapper Css START---------------*/
+
+#gaming_wrapper {
+  padding: 90px 0;
+}
+
+#gaming_wrapper .game_play {
+  margin: 0 0 45px;
+}
+
+#gaming_wrapper .game_play img {
+  border-radius: 100%;
+  max-width: 150px;
+}
+
+#gaming_wrapper .heading {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 80px;
+  color: #000000;
+}
+
+#gaming_wrapper .heading span {
+  color: #2f84ca;
+}
+
+.sport_btn {
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  width: 160px;
+  padding: 5px 0;
+  display: inline-block;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.sport_btn:hover {
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+}
+
+.sport_btn span {
+  color: #2f84ca;
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+/*-------------our-coaches-wrapper Css START---------------*/
+
+#our-coaches-wrapper {
+  padding: 80px 0;
+  background-color: #eaeaea;
+  background-image: url("../images/bg-Layer.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+.heading h2 {
+  font-size: 34px;
+  font-weight: 500;
+  padding: 0 0 40px;
+}
+
+.heading p {
+  font-size: 17px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.coach_decription {
+  font-size: 12px;
+  position: absolute;
+  top: -350px;
+  background: #2f84cadd;
+  color: #fff;
+  padding: 5px;
+  height: 100%;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+}
+
+.coach_decription a.about_btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+  background: #000000;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 50px;
+  font-size: 14px;
+  width: 63px;
+}
+
+.coach_decription a.about_btn:hover {
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.coach_details figure {
+  position: relative;
+  overflow: hidden;
+  transition: all 3s ease-in-out;
+  -webkit-transition: all 3s ease-in-out;
+  -moz-transition: all 3s ease-in-out;
+}
+
+/* .coach_details figure:hover .coach_decription {
+  top: 0;
+} */
+
+.coach_details figure .coach_decription {
+  top: 0;
+}
+
+.trial-wrapper {
+  padding: 80px 0 0;
+}
+
+.coach-name {
+  font-size: 22px;
+  font-weight: 500;
+  color: #000;
+}
+
+.role {
+  color: #2f84ca;
+  font-size: 16px;
+  padding: 0 0 10px;
+  border-bottom: 2px #000 solid;
+}
+
+.inner-text {
+  font-size: 34px;
+  font-weight: 500;
+  color: #000;
+}
+
+.inner-text span {
+  display: block;
+  font-size: 40px;
+  font-weight: 600;
+  color: #2f84ca;
+}
+
+.inner-text a.start_trial_btn {
+  font-size: 20px;
+  color: #fff;
+  background: #000;
+  width: 220px;
+  display: inline-block;
+  text-align: center;
+  height: 55px;
+  border-radius: 60px;
+  line-height: 55px;
+  margin: 40px 0 0;
+}
+
+.btn.coachabout_btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 50px;
+  font-size: 14px;
+  /* width: 110px; */
+  width: 63px;
+}
+.btn.coachabout_btn:hover {
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.inner-text img {
+  max-width: 25px;
+  margin-left: 30px;
+}
+
+a.start_trial_btn:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+}
+
+.contact_btn:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+}
+/*-------------For Athletes page Css START----------------*/
+
+.athlete-banner {
+  background-image: url(../images/athelete-banner-img.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.athlete-banner .banner_content,
+.coaches-banner .banner_content {
+  padding: 125px 0;
+}
+
+.individual_athlete {
+  padding: 180px 0 80px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.athlete_content span {
+  color: #2f84ca;
+}
+
+.athlete_content h2 {
+  margin: 0;
+  padding: 20px 0 0;
+}
+
+.athlete_content p {
+  font-size: 18px;
+  margin: 30px 0 0;
+  line-height: 30px;
+}
+
+.team_wrapper {
+  background-color: #eaeaea;
+  padding: 130px 0;
+}
+
+.team_content h2 {
+  margin: 0 0 0;
+}
+
+.team_content h2 span {
+  color: #2f84ca;
+}
+
+.team_content p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 25px 0 0;
+}
+
+/*-------------youth_athlete_wrapper Css START----------------*/
+
+.youth_athlete_wrapper {
+  background-image: url("../images/youth-athletics-img.png");
+  background-repeat: no-repeat;
+  padding: 120px 0 0;
+  overflow: hidden;
+}
+
+.athlete-img figure {
+  position: relative;
+  margin: 0;
+  bottom: -100px;
+}
+
+.athlete-content h2 span {
+  color: #fff;
+}
+
+.athlete-content p {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 30px 0 0;
+  line-height: 28px;
+  margin: 0;
+}
+
+/*-------------Coaches page Css START---------------*/
+
+.coaches-banner {
+  background-image: url("../images/coaches-banner-img.png");
+  background-size: cover;
+}
+
+.sport-wrapper .inner_allsport {
+  background: #efefef;
+  padding: 20px 0;
+}
+
+.sport-wrapper .row.text-center {
+  margin: 0 0 40px;
+}
+
+.sport-wrapper {
+  background: #000;
+  background: -webkit-linear-gradient(to right, #434343, #000);
+  background: linear-gradient(to right, #434343, #000);
+  padding: 80px 0;
+  margin-top: 150px;
+}
+
+.inner_allsport,
+.game_play {
+  overflow: hidden;
+}
+
+.sports_title {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 30px;
+}
+
+.game_play .img-fluid {
+  max-width: 280px;
+}
+
+.game_play:hover img {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+}
+
+.athlete_dasboard {
+  padding: 60px 0;
+}
+
+.week_section {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #fff;
+  padding: 20px 30px;
+}
+
+.weekassigned-wrapper select.form-control {
+  /* max-width: 245px; */
+  max-width: 48%;
+  background: transparent;
+  color: #fff;
+  /* height: 50px !important; */
+  height: 38px !important;
+
+  padding-right: 5px;
+}
+
+.weekassigned-wrapper select.form-control option {
+  color: #000000;
+}
+
+a.manage_btn {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  display: inline-block;
+  border: 2px #2f84ca solid;
+  margin: 0 0 0 20px;
+  border-radius: 5px;
+}
+
+a.manage_btn:first-child {
+  margin: 0;
+}
+
+.heading h3 {
+  color: #ffffff;
+  font-size: 34px;
+  margin: 0;
+  padding: 0 0 25px;
+}
+
+.day_one {
+  background-color: #4b4b4b;
+  padding: 20px;
+  color: #ffffff;
+  margin-bottom: 7%;
+}
+
+.day_one span {
+  font-size: 34px;
+  font-weight: 487;
+  display: inline-block;
+  /* margin: 0 0 30px; */
+}
+
+.day_one span i.fa.fa-check {
+  font-size: 30px;
+  color: green;
+}
+
+.day_one ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.day_one ul li a {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 2px #2f84ca solid;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.corrective-wrapper,
+.report-wrapper {
+  margin: 50px 0 0;
+}
+
+.report-wrapper {
+  color: #ffffff;
+  padding-bottom: 70px;
+}
+
+/*-----------membership-page Css START------------*/
+
+.type_of_membership {
+  padding: 80px 0;
+  margin-top: 150px;
+  background: #000;
+  background: -webkit-linear-gradient(to right, #434343, #000);
+  background: linear-gradient(to right, #434343, #000);
+}
+
+.type_of_membership h2 {
+  color: #fff;
+  background-color: #337ab7;
+  margin: 0;
+  padding: 25px 20px;
+}
+
+.type_of_membership ul {
+  background-color: #393939;
+  margin: 0;
+  padding: 15px;
+}
+
+.type_of_membership ul li {
+  color: #fff;
+  list-style: none;
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.type_of_membership ul li:first-child {
+  padding-top: 0;
+}
+
+.type_of_membership .link_btn {
+  background-color: #f5f5f5;
+  padding: 15px;
+}
+
+a.member_select {
+  background-color: #2f84ca;
+  color: #fff;
+  border-color: #2f84ca;
+}
+
+a.member_select:hover,
+a.member_select:focus {
+  background-color: #2f84ca;
+  color: #fff;
+  border-color: #2f84ca;
+}
+
+/*--------Footer Css START-------------*/
+.footer {
+  background-color: #1b1b1b;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.footer h5 {
+  color: #ffffff;
+  font-size: 26px;
+  padding-bottom: 30px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.footer .footer_menu ul li {
+  padding-bottom: 12px;
+  list-style: none;
+}
+
+.footer .footer_menu ul li:last-child {
+  padding-bottom: 0;
+}
+
+.footer ul li a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #2f84ca;
+}
+
+.footer .footer_menu ul.social_links li {
+  padding-left: 12px;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.footer .footer_menu ul.social_links li a img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 40px;
+}
+
+.footer .footer_menu ul.social_links li:first-child {
+  padding-left: 0;
+}
+
+.footer .contact_btn {
+  background-color: #2f84ca;
+  height: 60px;
+  width: 100%;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.footer .contact_btn i {
+  padding-left: 60px;
+  font-size: 22px;
+}
+
+.privacy-wrapper {
+  background-image: url("../images/privacy_policy_banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 200px 0;
+}
+
+.cookie-wrapper {
+  background-image: url("../images/cookie_policy_banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* padding: 200px 0;  */
+  padding: 110px 0;
+}
+
+.terms_condition-wrapper {
+  background-image: url("../images/TermsAndConditions_Banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 200px 0;
+  background-size: cover;
+}
+
+.faqs_banner-wrapper {
+  background-image: url("../images/faqs_banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 200px 0;
+  background-size: cover;
+}
+
+.loader_sec {
+  margin-top: 140px;
+}
+
+/* this is after reactJs  */
+.Model_btn {
+  background-color: #2f84ca;
+  border: 1px #2f84ca solid;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.Model_btn:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.Model_Btn_term {
+  border: 1px #2f84ca solid;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 8px 25px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}
+.Model_Btn_term:hover {
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+}
+.modal-header .close {
+  background: #000;
+  border-radius: 50%;
+  opacity: 1;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 20px;
+  padding: 0;
+}
+.img-fluid_game {
+  cursor: pointer;
+  max-width: 100%;
+}
+.img-fluid_game:hover {
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+}
+
+.Model_Btn_term_Add_Player {
+  color: rgba(129, 207, 224, 1);
+  border: 2px #81cfe0 solid;
+  /* padding: 10px 20px; */
+  padding: 10px 11px;
+  display: inline-block;
+  margin-left: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: transparent;
+  /* margin-bottom: 10px; */
+}
+
+.MuiLinearProgress-barColorPrimary {
+  background-color: #565656 !important;
+}
+
+.Model_Btn_term_Add_Player:hover {
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  /* border-color: transparent; */
+}
+
+.Model_Btn_term_Add_Coach {
+  color: rgba(200, 247, 197, 1);
+  border-color: rgba(200, 247, 197, 1);
+  background-color: transparent;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-left: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.Model_Btn_term_Add_Coach:hover {
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+}
+
+.Model_Btn_term_Delete_Team {
+  color: red;
+  border-color: red;
+  background-color: transparent;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-left: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.Model_Btn_term_Delete_Team:hover {
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+}
+
+.Model_Btn_term_Edit_User_Details {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 0;
+  border-radius: 8px;
+  border: 1px #2f84ca solid;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  background-color: transparent;
+}
+.Model_Btn_term_Edit_User_Details:hover {
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+}
+.Start_Workout {
+  font-size: 11px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 1px #2f84ca solid;
+  display: inline-block;
+  padding: 7px 8px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+/* .View_Workout {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 1px #2f84ca solid;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-top: 25%;
+  margin-left: -49%;
+}
+
+.View_Workout:hover {
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+ 
+  cursor: pointer;
+} */
+
+.Start_Workout:hover {
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  /* background-color: transparent; */
+  /* border: transparent; */
+  cursor: pointer;
+}
+.Start_Workout:focus {
+  background-color: #2e6da4;
+}
+
+.View_Workout:focus {
+  background-color: #2e6da4;
+}
+
+.Video_Model {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+}
+
+.Video_Model:hover {
+  color: #23527c;
+}
+
+.manage_btn_react {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  display: inline-block;
+  border: 2px #2f84ca solid;
+  margin: 0 0 0 20px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.manage_btn_react:hover {
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+}
+.manage_btn:hover {
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+}
+.nav-link {
+  background-color: transparent;
+  border: none;
+}
+.lable_graph {
+  display: block;
+
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  position: relative;
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  width: 72%;
+  margin-bottom: 0;
+}
+
+.Graph_btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+  background-color: #0062cc;
+  color: #fff;
+}
+.Graph_btn:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+.player-week-report-react {
+  background-color: rgba(255, 255, 255, 0.06);
+  margin: 50px 0 0;
+  padding: 40px 0;
+}
+.heading_react {
+  margin: 0 0 50px;
+  font-size: 34px;
+  text-transform: capitalize;
+}
+.btn-primary-after-react {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  border-color: #2f84ca;
+  color: #fff;
+}
+.btn-primary-after-react:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+}
+.Create_btn {
+  display: inline-block;
+  padding: 12px 25px;
+  color: #fff;
+  font-size: 16px;
+  text-transform: capitalize;
+  background: #5cb85c;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+}
+.Edit_btn {
+  display: inline-block;
+  padding: 12px 25px;
+  color: #fff;
+  font-size: 16px;
+  text-transform: capitalize;
+  background: #f0ad4e;
+  border-radius: 6px;
+  border: none;
+}
+.react-title {
+  text-align: center;
+  color: #fff;
+  font-size: 38px;
+  font-weight: 100;
+  line-height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Poppins";
+}
+.hr_title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+  height: 0;
+  box-sizing: content-box;
+}
+.react-title-center {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.react-span {
+  font-size: 10px;
+}
+.signup-wrapper {
+  height: unset;
+}
+.pull-right {
+  float: right !important;
+}
+.prime_signup_form .form-control,
+.login_form .form-control {
+  height: 35px;
+  border-radius: 0;
+  border: 0;
+}
+.react_validation {
+  color: #a94442;
+  font-size: 13px;
+}
+.self_screening {
+  /* height: 100vh; */
+  background: #000;
+  background: -webkit-linear-gradient(to right, #434343, #000);
+  background: linear-gradient(to right, #434343, #000);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* padding: 50px; */
+  padding: 118px;
+  padding-top: 80px;
+  padding-bottom: 7%;
+}
+
+.self_screening_button {
+  background-color: transparent;
+  border-color: #2f84ca;
+  font-size: 12px;
+  /* float: right !important; */
+  /* margin-right: 20px; */
+  /* float: center !important; */
+}
+.self_screening_button:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.react_selfScreen_Table {
+  margin-bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: table;
+}
+
+.react_selfScreen_Table_hr {
+  border-top: 1px solid#fff;
+}
+
+.react_selfScreen_Table_td {
+  padding-bottom: 12px;
+  padding-top: 8px;
+}
+
+.self_screen_btn_back_sholder {
+  margin-left: 408px;
+}
+.hr_title_self_sccreening {
+  border-top: 2px solid #eee;
+  padding-right: 15px;
+}
+.exercise {
+  padding: 5px;
+}
+.td_Self_screen {
+  padding: 15px;
+}
+.Self_Screening_table_modal {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: transparent;
+}
+.Self_Screening_table_modal th {
+  padding: 8px;
+  border-top: 0;
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+  text-align: right;
+  line-height: 1.42857143;
+  text-align: left;
+  box-sizing: border-box;
+}
+.dysfunction-tile-body {
+  width: 220px;
+}
+.nav_pills {
+  margin-top: calc((var(--navbar-height-lg) - var(--navbar-item-height)) / 2);
+}
+
+.common_active {
+  /* background-color: #337ab7; */
+  border-radius: 4px;
+  position: relative;
+  display: block;
+  padding: 10px 0px;
+  text-decoration: none;
+  width: 115px;
+  margin-left: 10px;
+  display: inline;
+}
+.common_active_btn {
+  color: #337ab7;
+  border: none;
+  background-color: transparent;
+  padding: 8px 20px;
+  /* backgrounds-color: #2f84ca; */
+}
+.common_active_btn:hover {
+  background-color: #337ab7;
+  color: #fff;
+  border-radius: 4px;
+}
+.common_active_btn:focus {
+  background-color: #337ab7;
+  color: #fff;
+  border-radius: 4px;
+}
+.common_injuries_btn {
+  color: #337ab7;
+  border: none;
+  background-color: transparent;
+  padding: 8px 20px;
+}
+.common_injuries {
+  color: #fff;
+  /* background-color: #337ab7; */
+  border-radius: 4px;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  width: 100px;
+  margin-left: 10px;
+  display: inline;
+}
+.common_injuries_btn:hover {
+  background-color: #337ab7;
+  color: #fff;
+  border-radius: 4px;
+}
+.common_injuries_btn:focus {
+  background-color: #337ab7;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.tab-content_clearfix {
+  color: #fff;
+}
+.self_screening_panel_need_Analyses {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  position: relative;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  height: 520px;
+  width: 100%;
+}
+.react-datepicker-wrapper,
+.react-datepicker__input-container,
+.react-datepicker__input-container input {
+  /* display: block; */
+  width: 100%;
+  height: 35px;
+  border-radius: 0;
+  border: 0;
+}
+
+.react-datepicker__input-container input {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.celender_img {
+  padding: 2px 2px;
+  height: 25px;
+  /* margin-left: 480px; */
+  position: relative;
+  top: -30px;
+  color: #aaa;
+  opacity: 0.5;
+  transition: 0.5s ease;
+  float: right !important;
+  margin-right: 3px;
+}
+
+.react_icon i {
+  top: -30px;
+  position: relative;
+  margin-left: 20px;
+  margin-left: 480px;
+  color: black;
+  height: 25px;
+}
+
+.react_login_Section_btn:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+  color: #fff;
+}
+
+.react_login_Section_btn {
+  border: 1px solid rgba(42, 188, 224, 1);
+  color: rgba(42, 188, 224, 1);
+}
+
+.react_login_Section_coach_btn {
+  border: 1px solid rgba(200, 247, 197, 1);
+  color: rgba(200, 247, 197, 1);
+}
+
+.react_login_Section_coach_btn:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+  color: #fff;
+}
+
+.side_hr_loginsection {
+  border-right: 3px solid #fff;
+}
+
+.react_loginSection_container {
+  max-width: 1275px;
+}
+
+.nav-item::after {
+  outline: none;
+  /* border-out */
+}
+
+button:focus {
+  outline: 0;
+}
+
+button.btn-primary-after-react {
+  border-color: #2f84ca;
+}
+.help_modal_SubPoints {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.help_modal_content {
+  margin-bottom: 20px;
+  font-family: "Poppins";
+}
+.week_section_react {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #fff;
+  /* padding: 20px 30px; */
+  width: 100%;
+}
+
+.week_section_react_Corrective_Exercises {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #fff;
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.week_section_react h3 {
+  padding: 20px 30px;
+}
+.week_section_react_table {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #fff;
+  padding: 20px 30px;
+  width: 100%;
+  margin-bottom: 0;
+}
+.team_name {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 25px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.team_list_react {
+  margin-bottom: 81px;
+}
+
+.react_Testing_Table th {
+  border-top: none;
+}
+.testing_dropdown_btn {
+  margin-top: 30px;
+}
+.testing_dropdown_btn::after {
+  outline: none;
+}
+
+.testing_protocol_react {
+  margin-bottom: 68px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #fff;
+  padding: 20px 30px;
+}
+
+.testing_dropdown_a {
+  margin-left: 20px;
+}
+.report_tr tr th {
+  border-bottom: 1px solid #dee2e6;
+}
+.testing_protocol_delete {
+  display: inline-block;
+  padding: 12px 25px;
+  color: #fff;
+  font-size: 16px;
+  text-transform: capitalize;
+  background: #d9534f;
+  border-radius: 6px;
+  border: transparent;
+}
+.testing_protocol_delete:hover {
+  background: #d9535f;
+  cursor: pointer;
+}
+.add_Check_Button {
+  background-color: #337ab7 !important;
+  border: 1px solid #337ab7;
+}
+.add_Check_Button:hover {
+  cursor: pointer;
+  background-color: #338ab7 !important;
+  border: 1px solid #337ab7;
+}
+.team_testing_result_button {
+  background-color: transparent;
+  border: transparent;
+  font-size: 20px;
+  color: #337ab7;
+  cursor: pointer;
+}
+.table_react_cursor {
+  cursor: pointer;
+}
+.caret {
+  color: #fff;
+  display: inline;
+  position: absolute;
+  right: 22px;
+  top: 10px;
+  cursor: pointer;
+}
+.caret_Select_exercise {
+  color: #fff;
+  display: inline;
+  position: absolute;
+  right: 22px;
+  top: 10px;
+  cursor: pointer;
+}
+.exercise_table_btn {
+  color: #fff;
+  font-size: 16px;
+}
+.delete_modal_react {
+  margin: 30px;
+}
+.Model_btn_ok {
+  background-color: -internal-light-dark(
+    rgb(118, 118, 118),
+    rgb(195, 195, 195)
+  );
+  border: 1px black solid;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+.Model_btn_ok:hover {
+  background-color: rgb(180, 175, 175);
+  cursor: pointer;
+}
+.Model_btn_Cancel:hover {
+  background-color: rgb(180, 175, 175);
+  cursor: pointer;
+}
+
+.Model_btn_Cancel {
+  background-color: -internal-light-dark(
+    rgb(118, 118, 118),
+    rgb(195, 195, 195)
+  );
+  border: 1px black solid;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+.delete_program_react {
+  border: 1px red solid;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 8px 25px;
+  font-size: 18px;
+  color: red;
+  text-decoration: none;
+  background-color: transparent;
+}
+.in_Session_ol {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+  /* margin-bottom: 141px; */
+  margin-bottom: 54px;
+}
+.Workout_react_top {
+  margin-right: 50px;
+}
+.Workout_top_react {
+  margin-left: 40%;
+  font-size: 40px;
+  text-transform: capitalize;
+  /* margin-top: 5%; */
+}
+.Worhout_exercise_react {
+  margin-left: 40%;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.workout_group_btn_react {
+  padding: 20px 6px;
+}
+.react_workout_delete_btn {
+  margin-left: 32%;
+  margin-top: 8%;
+}
+.react_workout_exercise_btn:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+  color: #fff;
+}
+.react_workout_exercise_btn {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #2e6da4;
+  cursor: pointer;
+}
+
+.react_workout_table th {
+  border-top: none;
+}
+.super_set_react_center {
+  margin-left: 28%;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.btn_react_workot_group {
+  border: 2px solid #2e6da4;
+  background: transparent;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+.btn_react_workot_group:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+}
+.btn_update_exercise_react {
+  margin-top: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid#2e6da4;
+}
+.btn_update_exercise_react:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+}
+.superset_select_react {
+  /* -moz-appearance: none; */
+  -moz-appearance: none;
+}
+.btn_react_add_new_workout {
+  background-color: transparent;
+  border-radius: 3px;
+  border: 2px solid #2e6da4;
+  color: #fff;
+}
+.btn_react_add_new_workout:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+}
+.atp_modal_btn {
+  color: #fff;
+  background: #f0ad4e;
+  display: inline-block;
+  padding: 4px 30px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+.atp_Green_modal_btn {
+  color: #fff;
+  background: #5cb85c;
+  display: inline-block;
+  padding: 4px 30px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.Edit_workout_modal h2 {
+  margin: 23px 31px;
+  color: #555;
+  font-size: 38px;
+  /* font-weight: 100; */
+  line-height: 50px;
+  /* margin-top: 10px; */
+}
+.modal_react_modal_control {
+  padding: 0.375rem 12.75rem;
+}
+.workout_modal_label {
+  text-align: center;
+}
+.btn_react_add_week_day {
+  background-color: transparent;
+  border-radius: 3px;
+  border: 2px solid #2e6da4;
+  color: #fff;
+}
+
+.btn_react_add_week_day:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+}
+.react_right_line {
+  border-right: 2px solid #fff;
+  padding-right: 20px;
+}
+.week_button {
+  text-align: center;
+  border: 1px #2f84c2 solid;
+  border-radius: 8px;
+  font-size: 14px;
+  text-transform: capitalize;
+  background-color: transparent;
+  color: #fff;
+  padding: 5px 39%;
+  margin-bottom: 5%;
+}
+
+.week_button:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.week_day_button {
+  text-align: center;
+  border: 1px #2f84c2 solid;
+  border-radius: 8px;
+  font-size: 14px;
+  text-transform: capitalize;
+  background-color: transparent;
+  color: #fff;
+  padding: 5px 39%;
+  margin-bottom: 5%;
+}
+.week_day_button:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.celender_img_atp {
+  padding: 2px 2px;
+  height: 25px;
+  position: relative;
+  top: -45px;
+  color: #aaa;
+  opacity: 0.5;
+  transition: 0.5s ease;
+  margin-right: 3px;
+}
+
+.workout_delete_button {
+  color: #fff;
+  background: #d9534f;
+  display: inline-block;
+  padding: 4px 32px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+.assign_Team_remove_React_button {
+  color: #fff;
+  background: #d43f3a;
+  display: inline-block;
+  padding: 6px 20px;
+  border: 2px #d43f3a solid;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 0;
+}
+.assign_Team_remove_React_button:hover {
+  background: #cc2924;
+  border: 2px #cc2924 solid;
+}
+.assign_Team_Assign_React_button {
+  color: #fff;
+  background: transparent;
+  display: inline-block;
+  padding: 6px 27px;
+  border: 2px #2e6da4 solid;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 0;
+}
+.assign_Team_Assign_React_button:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+}
+.assign_btn_react_main {
+  color: #fff;
+  border: 2px #2e6da4 solid;
+  display: block;
+  padding: 8px 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 8px;
+  background: transparent;
+  width: 100%;
+}
+.home_sc_admin {
+  background: rgba(255, 255, 255, 0.06);
+  margin: 25px 0 0;
+  color: #fff;
+}
+
+.pannel_heading_react {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+  padding: 23px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin-top: 0;
+  /* margin-bottom: 1rem; */
+}
+.exercise_group_table {
+  padding: 20px 20px;
+}
+.exercise_group_table_Second {
+  padding: 20px 10px;
+}
+
+.exercise_group_table_thead tr th {
+  padding: 5px;
+}
+.exercise_group_table table tr td {
+  width: 22%;
+}
+.admin_button {
+  background-color: transparent;
+  color: #fff;
+  border-color: #2e6da4;
+  margin-right: 6px;
+}
+.admin_button:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.admin_reset_password_button {
+  padding: 6px 12px !important;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 18px;
+  border-radius: 6px;
+  color: #fff;
+  border: 1px solid#2e6da4;
+  margin-right: 8px;
+}
+.admin_user_delete_button {
+  padding: 6px 12px !important;
+  cursor: pointer;
+  background-color: #d9534f;
+  font-size: 18px;
+  border-radius: 6px;
+  color: #fff;
+  border: 1px solid #d9534f;
+  margin-right: 8px;
+}
+.reactBodyHighliter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2rem 10rem;
+}
+
+#workout-builder-workout-exercises-panel {
+  height: 400px;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.06);
+  margin: 25px 0 0;
+  color: #fff;
+  padding: 10px 20px 50px;
+}
+
+.react_workout_group {
+  height: 200px;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.06);
+  margin: 25px 0 0;
+  color: #fff;
+  padding: 10px 20px 50px;
+}
+.exerciseSaverButton {
+  margin-right: 70px;
+}
+
+.form-align-centre {
+  margin: auto;
+  width: 44%;
+  left: 3%;
+}
+
+.forgot_Password_Email_button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #2e6da4;
+}
+
+.forgot_Password_Email_button:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.login_page_react {
+  background: #000;
+  background: -webkit-linear-gradient(to right, #434343, #000);
+  background: linear-gradient(to right, #434343, #000);
+  display: flex;
+  flex-direction: column;
+}
+/* .reactTableOverflow {
+  height: 20px;
+} */
+.workout_Complete_Btn {
+  margin-left: 51%;
+  color: rgb(5, 163, 202);
+  background: transparent;
+  border: transparent;
+}
+
+.workout_Complete_Btn:hover {
+  color: rgb(5, 163, 202);
+  cursor: pointer;
+  border-bottom: 1px solid rgb(5, 163, 202);
+}
+
+.workout_Complete_Btn_Skip_Rest {
+  margin-left: 79%;
+  color: rgb(5, 163, 202);
+  background: transparent;
+  border: transparent;
+  font-size: 20px;
+}
+
+.workout_Complete_Btn_Skip_Rest:hover {
+  color: rgb(5, 163, 202);
+  cursor: pointer;
+  border-bottom: 1px solid rgb(5, 163, 202);
+}
+
+.WeekButton_tranningPlan {
+  white-space: normal;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 13px;
+  /* padding-right: 119px; */
+  background-color: #5c8ac3;
+  border: transparent;
+  margin-right: 25px;
+  margin-bottom: 19px;
+}
+
+.TranningPlan_Day_Pannel {
+  /* -ms-flex-direction: column; */
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  /* -webkit-flex-direction: column; */
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #fff;
+  /* display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox; */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  position: relative;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.TranningPlan_Day_Pannel_heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.TranningPlan_Day_Pannel_body {
+  padding: 20px;
+}
+.add_Seven_day_Atp {
+  background-color: transparent;
+  color: #fff;
+  padding: 2px 16px;
+  border-radius: 6px;
+  border: 1px #2f84c2 solid;
+  margin-right: 13px;
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+.add_Seven_day_Atp:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.testing_protocal_previous {
+  padding: 6px 20px;
+  display: inline-block;
+  color: #fff;
+  border: 1px #2e6da4 solid;
+  border-radius: 5px;
+  margin-left: 7px;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.testing_protocal_previous:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.signupPassImg {
+  position: absolute;
+  height: 22px;
+  top: 36px;
+  right: 13px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.signupPageConfirmPassImg {
+  position: absolute;
+  height: 22px;
+  top: 36px;
+  right: 13px;
+  opacity: 0.5;
+}
+/* .self-screening-body {
+  flex: 2;
+} */
+
+.needs-analysis-view-more {
+  overflow: hidden;
+  height: 733px;
+}
+.needs-analysis-view-more-add {
+  height: 98%;
+}
+
+.athlete_week_date_main_h3 {
+  position: relative;
+}
+.athlete_week_date_main_dateFormate {
+  font-size: 20px;
+}
+.athlete_week_date_main_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.athlete_week_date_main_div i {
+  border: 1px solid var(--appBlue);
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.export_to_pdf_btn {
+  /* background-color: "#f0ad4e",
+  border: 1px solid #f0ad4e, */
+  background-color: var(--appYellow);
+  border: 1px solid var(--appYellow);
+}
+
+.reps_check {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+}
+.load_required {
+  margin-left: 37%;
+}
+
+.edit_WorkoutGroup_Modal_rest_set {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit_workout_group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  padding-bottom: 0px;
+}
+
+.edit_workout_group_button {
+  padding: 3px 30px;
+  font-size: "15px";
+  background: var(--appYellow);
+  color: #fff;
+}
+
+.edit_workout_group_button_update {
+  padding: 4px 30px;
+  font-size: 14px;
+  background: var(--appYellow);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.coaches-scroll {
+  height: 355px;
+  overflow: scroll;
+}
+
+.coaches-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.assign-coach-img {
+  height: 55px;
+  width: 55px;
+}
+
+.screening_protocol_comment_btn {
+  /* padding: 5px 69px; */
+  background: transparent;
+  border: 2px solid #337ab7;
+  color: #337ab7;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.screening_protocol_comment_td {
+  border-top: none;
+}
+
+.screening_protocol_view_button {
+  background: transparent;
+  padding: 0 30px;
+  color: #fff;
+  background-color: #337ab7;
+  border: 1px solid #337ab7;
+  font-size: 17px;
+}
+.addResult_heading {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #2f84ca;
+  margin-bottom: 28px;
+  padding: 7px;
+  font-size: 29px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+.addResult_label {
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: 13px;
+}
+
+.View_modal_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.View_modal_card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.disabled_btn {
+  background-color: darkgrey;
+  cursor: not-allowed;
+  opacity: 0.3;
+  border: 1px solid darkGray;
+  padding: 6px 20px;
+  display: inline-block;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 7px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.disabled_btn:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+}
+
+/*------Responsive css------*/
+
+@media (max-width: 1200px) {
+  #header .navbar .nav-link {
+    padding: 0 12px;
+    font-size: 16px;
+  }
+  .edit_workout_group_button_li {
+    padding-top: 15px;
+  }
+}
+@media (max-width: 1280px) {
+  #header .navbar .nav-link {
+    padding: 0 12px;
+    font-size: 16px;
+  }
+  .edit_workout_group_button_li {
+    padding-top: 15px;
+    width: 100%;
+  }
+  .edit_workout_group_button,
+  .edit_workout_group_button_update {
+    width: 100%;
+  }
+  .edit_workout_group_button_li_li {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1440px) {
+  #header .navbar .nav-link {
+    padding: 0 12px;
+    font-size: 16px;
+  }
+  .edit_workout_group_button_li {
+    padding-top: 15px;
+    width: 100%;
+  }
+  .edit_workout_group_button,
+  .edit_workout_group_button_update {
+    width: 100%;
+  }
+  .edit_workout_group_button_li_li {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  #header .navbar .nav-link {
+    margin: 12px 0;
+    text-align: center;
+  }
+
+  #header .navbar .nav-link::before {
+    display: none;
+  }
+
+  #gaming_wrapper .game_play img {
+    max-width: 90px;
+  }
+
+  .heading h1 {
+    font-size: 30px;
+  }
+
+  .privacy-wrapper {
+    padding: 110px 0;
+  }
+
+  .banner_content h1 {
+    font-size: 54px;
+    line-height: 70px;
+  }
+
+  .self_screening {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner_content h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .inner_teamsection .heading {
+    margin: 25px 0 0;
+  }
+
+  .inner_teamsection .heading {
+    margin-bottom: 20px;
+  }
+
+  .Model_Btn_term {
+    border-radius: 6px;
+    font-size: 17px;
+  }
+
+  .weekassigned-wrapper select.form-control {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  a.manage_btn {
+    padding: 8px 10px;
+    margin: 0 0 0 5px;
+    font-size: 12px;
+  }
+
+  .manage_btn_react {
+    margin: 0;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .lable_graph,
+  label {
+    width: 100%;
+  }
+
+  .signup-wrapper,
+  .login_page,
+  .selection-wrapper {
+    height: 100%;
+    padding: 50px 0;
+  }
+
+  .athelete-section {
+    padding: 40px;
+  }
+
+  .coach-section {
+    padding: 40px;
+  }
+
+  .right_side_text {
+    font-size: 20px;
+  }
+
+  #gaming_wrapper .heading {
+    font-size: 24px;
+  }
+
+  .athelete-section h2,
+  .coach-section h2 {
+    padding-bottom: 50px;
+    padding-top: 0;
+  }
+
+  .coach_details {
+    padding: 20px 0 0;
+  }
+
+  .individual_athlete {
+    padding: 70px 0 80px;
+  }
+
+  .athlete-banner .banner_content,
+  .coaches-banner .banner_content {
+    padding: 90px 0;
+  }
+
+  .team_content {
+    padding-bottom: 50px;
+  }
+
+  .team_wrapper {
+    padding: 60px 0;
+  }
+
+  .athlete-img figure {
+    bottom: 0;
+  }
+
+  .athlete-content p {
+    padding: 30px 0 40px;
+  }
+
+  .youth_athlete_wrapper {
+    padding: 40px 0 0;
+  }
+
+  .sport-wrapper .inner_allsport {
+    background-color: transparent;
+  }
+
+  .game_play {
+    background: #fff;
+    margin: 0 0 30px;
+    padding: 20px 0 0;
+  }
+
+  .game_play figure {
+    margin: 0;
+  }
+
+  .member_type {
+    margin: 0 0 30px;
+  }
+
+  .coach-login {
+    padding: 40px 0 0;
+  }
+
+  .breadcrumb {
+    background: transparent;
+    margin: 0 0 20px;
+  }
+
+  .breadcrumb li.breadcrumb-item {
+    font-size: 12px;
+  }
+
+  .inner_teamsection a.delete_program {
+    font-size: 16px;
+  }
+
+  .asign_team_right ul li {
+    margin-top: 15px;
+    display: inherit;
+    margin-left: 0;
+  }
+
+  .asign_title {
+    font-size: 24px;
+  }
+  /* rect changes */
+  .Model_Btn_term_Delete_Team {
+    margin-top: 14px;
+  }
+  .Model_Btn_term_Add_Player {
+    color: rgba(129, 207, 224, 1);
+    border: 2px #81cfe0 solid;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  figure.player_img img {
+    margin-bottom: 29px;
+  }
+
+  .admin_double_button {
+    display: flex;
+  }
+
+  .exercise_group_table table tr td {
+    width: 100%;
+  }
+
+  .lable_graph,
+  label {
+    width: 100%;
+    margin: 0 0 10px !important;
+  }
+
+  #header .navbar button.nav-link {
+    width: 100%;
+  }
+
+  .heading h3 {
+    font-size: 24px;
+  }
+}
+
+/* react change */
+@media (max-width: 576px) {
+  .Model_Btn_term_Add_Coach {
+    color: rgba(200, 247, 197, 1);
+    border-color: rgba(200, 247, 197, 1);
+    background-color: transparent;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+}
+
+@media all and (max-width: 1000px) and (min-width: 200px) {
+  .home_sc ul li {
+    margin-bottom: 10% !important;
+  }
+  .week_btn {
+    margin-top: 5%;
+    margin-bottom: 5% !important;
+  }
+}

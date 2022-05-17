@@ -1,0 +1,64 @@
+/*--------Footer Css START-------------*/
+.footer{
+    background-color: #1b1b1b;
+    padding: 80px 0;
+}
+
+.footer h5{
+    color: #ffffff;
+    font-size: 26px;
+    padding-bottom: 30px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.footer .footer_menu ul li{
+    padding-bottom: 12px;
+    list-style: none;
+}
+
+.footer .footer_menu ul li:last-child{
+    padding-bottom: 0;
+}
+
+.footer ul li a{
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer ul li a:hover{
+    color: #2f84ca;
+}
+
+.footer .footer_menu ul.social_links li{
+    padding-left: 12px;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.footer .footer_menu ul.social_links li a img{
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 40px;
+}
+
+.footer .footer_menu ul.social_links li:first-child{
+    padding-left: 0;
+}
+
+.footer .contact_btn {
+    background-color: #2f84ca;
+    height: 60px;
+    width: 100%;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.footer .contact_btn i{
+    padding-left: 60px;
+    font-size: 22px;
+}

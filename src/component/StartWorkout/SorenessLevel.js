@@ -1,0 +1,39 @@
+import React from "react";
+
+export default class SorenessLevel extends React.Component {
+  render() {
+    return (
+      <div>
+        <div
+          className="popup_heading"
+          style={{ marginBottom: "2%", fontWeight: "bold" }}
+        >
+          How Sore Are You?
+        </div>
+        <ul className="d-flex justify-content-around">
+          <li>very sore</li>
+          <li>sore</li>
+          <li>not sore</li>
+        </ul>
+        <div className="middle">
+          {Array.from(Array(10).keys()).map((index) => (
+            <span key={index}>
+              <label>
+                <input
+                  type="radio"
+                  name="radio11"
+                  value={index + 1}
+                  onChange={this.props.onValueChangeSecond}
+                />
+                <div className="front-end box">
+                  <span>{index + 1}</span>
+                </div>
+              </label>
+              &nbsp;
+            </span>
+          ))}
+        </div>
+      </div>
+    );
+  }
+}

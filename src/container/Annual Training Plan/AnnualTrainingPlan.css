@@ -1,0 +1,65 @@
+section.myteams_wrapper {
+  padding: 0 0 70px;
+}
+
+.inner_teamsection {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #fff;
+  padding: 20px 30px;
+}
+
+.inner_teamsection .heading {
+  font-size: 34px;
+  text-transform: capitalize;
+}
+
+.inner_teamsection a.create_team {
+  border: 1px #2f84ca solid;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 8px 25px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.inner_teamsection a {
+  text-decoration: none;
+}
+
+.program_schadual {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.program_schadual:hover figure {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  /* padding-bottom: 5px;
+  padding-top: 5px; */
+  /* margin-top: -10px; */
+}
+
+.program_schadual .program_name {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 0 20px;
+}
+
+.inner_teamsection .table tbody tr td a {
+  color: #fff;
+  background: red;
+  display: inline-block;
+  padding: 6px 20px;
+}
+
+.inner_teamsection .table tbody tr td a {
+  color: #fff;
+  background: red;
+  display: inline-block;
+  padding: 6px 20px;
+}

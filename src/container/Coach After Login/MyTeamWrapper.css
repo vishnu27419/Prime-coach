@@ -1,0 +1,41 @@
+section.myteams_wrapper {
+  padding: 0 0 70px;
+}
+
+.inner_teamsection {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #fff;
+  padding: 20px 30px;
+}
+
+.inner_teamsection .heading {
+  font-size: 34px;
+  text-transform: capitalize;
+}
+
+.inner_teamsection a.create_team {
+  border: 1px #2f84ca solid;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 8px 25px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.inner_teamsection a {
+  text-decoration: none;
+}
+
+.team_name {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.myteams_wrapper figure {
+  max-width: 100%;
+  margin: 0 auto;
+}

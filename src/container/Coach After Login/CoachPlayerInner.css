@@ -1,0 +1,108 @@
+section.myteams_wrapper {
+  padding: 0 0 70px;
+}
+
+.inner_teamsection {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #fff;
+  padding: 20px 30px;
+  overflow: hidden;
+}
+
+.inner_teamsection .heading {
+  font-size: 34px;
+  text-transform: capitalize;
+}
+
+.heading_backs {
+  background-color: rgba(255, 255, 255, 0.06);
+  font-size: 28px;
+  text-align: center;
+  margin: 50px 0 60px;
+  padding: 20px 0;
+  text-transform: capitalize;
+}
+
+.breadcrumb {
+  background: transparent;
+  margin-bottom: 0;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #2f84ca;
+}
+
+.breadcrumb-item.active,
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #fff;
+}
+
+a.player_page {
+  text-decoration: none;
+}
+
+.remove_palyer {
+  border-bottom: 1px #fff solid;
+  margin-bottom: 60px;
+  padding: 0 0 20px;
+}
+
+.player_name {
+  color: #fff;
+  text-align: center;
+}
+
+figure.player_img img {
+  background: #126680;
+  border-radius: 20px;
+  /* margin-top: 30px; */
+}
+
+figure.player_img img:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+}
+
+ul.player_info li {
+  margin-top: 20px;
+}
+
+ul.player_info li:first-child {
+  margin-top: 0;
+}
+
+ul.player_info li a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 0;
+  border-radius: 8px;
+  border: 1px #2f84ca solid;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+ul.player_info li a:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+}
+
+a.remove_btn {
+  color: red;
+  border: 1px red solid;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+a.remove_btn:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+}

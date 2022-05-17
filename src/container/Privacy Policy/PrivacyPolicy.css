@@ -1,0 +1,54 @@
+.heading h1 {
+  font-size: 54px;
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+}
+
+.heading h1 span {
+  color: #fff;
+}
+
+.blue_heading {
+  color: #2f84ca;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 25px;
+}
+
+.policy_content {
+  padding: 0 0 30px;
+}
+
+.policy_content p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.policy_content ul li {
+  font-size: 18px;
+  padding-bottom: 25px;
+}
+
+.policy_content ul li:last-child {
+  padding-bottom: 0;
+}
+
+.your_policy p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.your_policy ul li {
+  font-size: 18px;
+  line-height: 32px;
+  padding-bottom: 25px;
+}
+
+.your_policy ul li:last-child {
+  padding-bottom: 0;
+}
+
+.your_policy ul li strong {
+  display: block;
+}

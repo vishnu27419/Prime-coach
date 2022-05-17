@@ -1,0 +1,135 @@
+section.myteams_wrapper {
+  padding: 0 0 70px;
+}
+
+.inner_teamsection {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #fff;
+  padding: 20px 30px;
+  overflow: hidden;
+}
+
+.inner_teamsection .heading {
+  font-size: 34px;
+  text-transform: capitalize;
+}
+
+.inner_teamsection a.create_team {
+  border: 1px #2f84ca solid;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 8px 25px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+a.add_teams {
+  color: rgba(129, 207, 224, 1);
+  border: 2px #81cfe0 solid;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-left: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+a.add_teams:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+a.add_teams:nth-child(2) {
+  color: rgba(200, 247, 197, 1);
+  border-color: rgba(200, 247, 197, 1);
+}
+
+a.add_teams:nth-child(3) {
+  color: rgb(241, 176, 24);
+  border-color: rgb(241, 176, 24);
+}
+
+a.add_teams:nth-child(4) {
+  color: #fc9569;
+  border-color: #fc9569;
+}
+
+a.add_teams:nth-child(5) {
+  color: rgba(200, 247, 197, 1);
+  border-color: rgba(200, 247, 197, 1);
+}
+
+a.add_teams:nth-child(6) {
+  color: #b435ee;
+  border-color: #b435ee;
+}
+
+a.add_teams:nth-child(7) {
+  color: #91a5fd;
+  border-color: #91a5fd;
+}
+
+a.add_teams:nth-child(8) {
+  color: #1465fa;
+  border-color: #1465fa;
+}
+a.add_teams:nth-child(9) {
+  color: #fbb128;
+  border-color: #fbb128;
+}
+a.add_teams:nth-child(10) {
+  color: #ff1493;
+  border-color: #ff1493;
+}
+
+a.add_teams:nth-child(11) {
+  color: #fc9569;
+  border-color: #fc9569;
+}
+
+.heading_backs {
+  background-color: rgba(255, 255, 255, 0.06);
+  font-size: 28px;
+  text-align: center;
+  margin: 50px 0 60px;
+  padding: 20px 0;
+  text-transform: capitalize;
+}
+
+a.player_page {
+  text-decoration: none;
+}
+
+.player_name {
+  color: #fff;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+figure.player_img img {
+  background: #126680;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+figure.player_img img:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+}
+
+.addPlayer-pass-hide {
+  height: 20px;
+  position: absolute;
+  top: 41px;
+  right: 12px;
+  opacity: 0.4;
+  cursor: pointer;
+}

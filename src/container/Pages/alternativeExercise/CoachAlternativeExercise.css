@@ -1,0 +1,15 @@
+.basic-multi-select button {
+  width: 100%;
+  background: transparent;
+  border-color: #ced4da !important;
+  color: gray;
+  padding: 0.375rem 0.75rem;
+  /* -moz-appearance: none; */
+  border-radius: 6px;
+  font-size: 18px;
+  border: 1px solid;
+}
+
+.css-1vr111p-option {
+  color: black !important;
+}

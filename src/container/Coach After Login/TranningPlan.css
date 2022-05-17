@@ -1,0 +1,40 @@
+section.myteams_wrapper {
+  padding: 0 0 70px;
+}
+
+.inner_teamsection {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #fff;
+  padding: 20px 30px;
+  overflow: hidden;
+}
+
+.inner_teamsection .heading {
+  font-size: 34px;
+  text-transform: capitalize;
+}
+
+.heading_backs {
+  background-color: rgba(255, 255, 255, 0.06);
+  font-size: 28px;
+  text-align: center;
+  margin: 50px 0 60px;
+  padding: 20px 0;
+  text-transform: capitalize;
+}
+
+.breadcrumb {
+  background: transparent;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #2f84ca;
+}
+
+.breadcrumb-item.active,
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #fff;
+}

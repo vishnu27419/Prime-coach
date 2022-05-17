@@ -1,0 +1,141 @@
+section.myteams_wrapper {
+  padding: 0 0 70px;
+}
+
+.inner_teamsection {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #fff;
+  padding: 20px 30px;
+}
+
+.testresult_wrapper {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  color: #fff;
+  padding: 20px 30px;
+}
+
+.inner_teamsection .heading {
+  font-size: 34px;
+  text-transform: capitalize;
+}
+
+.inner_teamsection a.create_team {
+  border: 1px #2f84ca solid;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 8px 25px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.inner_teamsection a {
+  text-decoration: none;
+}
+
+.team_name {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.dropdown .dropdown-menu {
+  top: auto;
+}
+
+.protocol_btn {
+  background: transparent;
+  border-color: #376af9;
+  color: #fff;
+  padding: 10px 35px;
+  -moz-appearance: none;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.protocol_btn:hover {
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.breadcrumb {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  margin-right: 40px;
+}
+
+a.page_link_btn {
+  padding: 6px 20px;
+  display: inline-block;
+  color: #fff;
+  /* border: 1px blue solid; */
+  border: 1px #2e6da4 solid;
+  border-radius: 5px;
+  margin-left: 7px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.page_link_btn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  -moz-box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  box-shadow: 1px 1px 138px 9px rgba(42, 188, 224, 1);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.breadcrumb .breadcrumb-item.active {
+  color: #ffff;
+}
+
+.protocole ul li {
+  display: inline-block;
+}
+
+.protocole ul li a {
+  display: inline-block;
+  padding: 8px 15px;
+  color: #fff;
+  font-size: 16px;
+  text-transform: capitalize;
+  background: #5cb85c;
+  border-radius: 8px;
+}
+
+.protocole ul li:nth-child(2) a {
+  background: #f0ad4e;
+}
+
+.protocole ul li:nth-child(3) a {
+  background: #d9534f;
+}
+
+.custom-control.custom-checkbox {
+  height: 45px;
+  width: 60px;
+  padding: 0;
+}
+
+.custom-control-label::before {
+  width: 40px;
+  height: 40px;
+}
+
+.custom-control-label::after {
+  width: 40px;
+  height: 40px;
+  margin-left: 0;
+}
+
+.delete-button {
+  padding: 5px 0 0;
+}
